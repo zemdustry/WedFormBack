@@ -9,4 +9,6 @@ public interface GuestService {
     List<Guest> findAll();
 
     Optional<Guest> findById(Long id);
+
+    void deleteById(Long id);
 }

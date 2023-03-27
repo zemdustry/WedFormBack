@@ -28,6 +28,11 @@ public class GuestController {
                 .orElseThrow(() -> new NoSuchElementException());
     }
 
+    @DeleteMapping("/{id}")
+    void deleteById(@PathVariable Long id) {
+        guestService.deleteById(id);
+    }
+
     @PostMapping
     Guest createGuest(@RequestBody Guest newGuest) {
         return guestService.saveGuest(newGuest);

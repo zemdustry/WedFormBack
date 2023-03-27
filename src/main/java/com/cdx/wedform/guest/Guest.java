@@ -261,4 +261,8 @@ public class Guest implements Serializable {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    public Instant getRegisterDate() {
+        return registerDate;
+    }
 }

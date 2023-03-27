@@ -29,4 +29,9 @@ public class GuestServiceImpl implements  GuestService {
     public Optional<Guest> findById(Long id) {
         return guestRepository.findById(id);
     }
+
+    @Override
+    public void deleteById(Long id) {
+        guestRepository.deleteById(id);
+    }
 }
